@@ -4,10 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Park Data</h2>
 
 @foreach (DataGov_API.Models.Park park in Model.data)
 {
-    @(park.parkCode + " " + park.fullName + " " + park.latLong)
+    @(park.fullName + " (" + park.parkCode + ")" + " is located in " + park.states +  ". Find more info ") <a href = @string.Format(park.url)>here</a>
+    @(" or directions ") <a href = @string.Format(park.directionsUrl)>here</a>
+    <br />
     <br />
 }

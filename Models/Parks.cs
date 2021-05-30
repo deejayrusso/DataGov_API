@@ -23,23 +23,23 @@ namespace DataGov_API.Models
         public string latitude { get; set; }
         public string longitude { get; set; }
         public string latLong { get; set; }
-        /*    public Activity[] activities { get; set; }
-            public Topic[] topics { get; set; }*/
+        public Activity[] activities { get; set; }
+        public Topic[] topics { get; set; }
         public string states { get; set; }
-        /*   public Contacts contacts { get; set; }
-           public Entrancefee[] entranceFees { get; set; }
-           public Entrancepass[] entrancePasses { get; set; }*/
+        public Contacts contacts { get; set; }
+        public Entrancefee[] entranceFees { get; set; }
+        public Entrancepass[] entrancePasses { get; set; }
         public object[] fees { get; set; }
         public string directionsInfo { get; set; }
         public string directionsUrl { get; set; }
-        /*    public Operatinghour[] operatingHours { get; set; }
-            public Address[] addresses { get; set; }
-            public Image[] images { get; set; }*/
+        public Operatinghour[] operatingHours { get; set; }
+        public Address[] addresses { get; set; }
+        public Image[] images { get; set; }
         public string weatherInfo { get; set; }
         public string name { get; set; }
         public string designation { get; set; }
     }
-    /*
+
     public class Contacts
     {
         public Phonenumber[] phoneNumbers { get; set; }
@@ -88,7 +88,7 @@ namespace DataGov_API.Models
 
     public class Operatinghour
     {
-        public Exception[] exceptions { get; set; }
+        public Alternate[] exceptions { get; set; }
         public string description { get; set; }
         public Standardhours standardHours { get; set; }
         public string name { get; set; }
@@ -105,7 +105,7 @@ namespace DataGov_API.Models
         public string saturday { get; set; }
     }
 
-    public class Exception
+    public class Alternate
     {
         public Exceptionhours exceptionHours { get; set; }
         public string startDate { get; set; }
@@ -142,6 +142,6 @@ namespace DataGov_API.Models
         public string altText { get; set; }
         public string caption { get; set; }
         public string url { get; set; }
-    }*/
+    }
 
 }
