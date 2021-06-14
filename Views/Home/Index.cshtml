@@ -8,8 +8,8 @@
 
 @foreach (DataGov_API.Models.Park park in Model.data)
 {
-    @(park.fullName + " (" + park.parkCode + ")" + " is located in " + park.states +  ". Find more info ") <a href = @string.Format(park.url)>here</a>
-    @(" or directions ") <a href = @string.Format(park.directionsUrl)>here</a>
+    @(park.fullName + " (" + park.parkCode + ")" + " is located in " + park.states +  ". Find more info ") <a href = @string.Format(park.url) target="blank">here</a>
+    @(" or directions ") <a href = @string.Format(park.directionsUrl) target="_blank">here</a>
     <br />
     <br />
 }
